@@ -4,7 +4,7 @@
 [**点击进入阿里云最新优惠活动以及代金券领取**](https://leffz.com)
 
 
-[**如何用阿里云服务器建立个人网站（针对新手）**](https://alitenten.github.io/alecs.html)
+[如何用阿里云服务器建立个人网站（针对新手）](https://alitenten.github.io/alecs.html)
 
 
 #  阿里云服务器 ECS
