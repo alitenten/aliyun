@@ -6,6 +6,7 @@
 
 [如何用阿里云服务器建立个人网站（针对新手）](https://alitenten.github.io/alecs.html)
 
+![Image text](https://alitenten.github.io/img/15.png)
 
 #  阿里云服务器 ECS
 
