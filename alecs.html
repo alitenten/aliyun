@@ -1,0 +1,191 @@
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>首先，我们需要购买云服务器和域名。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>域名建议用.com后缀的（一般五十左右），想要便宜的域名可以买.top等后缀的（一般几块钱）。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>点击这里<a href="https://wanwang.aliyun.com/?source=5176.11533457&amp;userCode=xbifxhv7&amp;type=copy" target="_blank" rel="noreferrer noopener" aria-label="购买域名 (opens in a new tab)">购买域名</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>云服务器的话，根据自己的需要购买，如果只是简单的发发文章图片，视频等，网站访问量不高的话，买个1核2G1M的配置也能够用。当然，如果对响应速度等体验比较看重的话，可以买个稍微高点配置的，比如2核4G的这样的。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>（<strong>注意：</strong>下单的时候先买服务器再去买域名，首购优惠很大不要错过，这里有份<a href="https://leffz.com" target="_blank" rel="noreferrer noopener" aria-label="阿里云和腾讯云的最新优惠和代金券汇总 (opens in a new tab)">阿里云和腾讯云的最新优惠和代金券汇总</a>）</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>下面说说用阿里云服务器（腾讯云服务器也是一样的）建立个人网站（以WordPress为例）的具体流程：</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>因为这篇文章是针对新手的，没有什么技术基础的朋友写的。所以，关于如何手动配置云服务器的相关环境部署，这里就不细讲了。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>这里教新手朋友使用一款非常简单好用的服务器面板软件——宝塔面板。方便我们一键部署所需的环境。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>什么是宝塔面板：宝塔Linux面板是提升运维效率的服务器管理软件，支持一键LAMP/LNMP/集群/监控/网站/FTP/数据库/JAVA等100多项服务器管理功能。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>1.购买好云服务器后，登陆到你的控制台，找到你购买的“云服务器”，登陆进去。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":545,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/1.jpg" alt="" class="wp-image-545"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>2.这时候应该打开了云服务器的命令行终端（阿里云或腾讯云登陆后都是一样的），我们只需把下面一行代码输入，然后按回车键即可。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:image {"id":548,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/2.png" alt="" class="wp-image-548"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>3. 我们耐心等待一会儿，等宝塔面板自动安装完成（中间若出现是否安装*Y/N？时，我们只需要输入y就行了）。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":560,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/3.png" alt="" class="wp-image-560"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>安装完成后，我们接着再命令行输入bt，这个时候就会显示面板的使用帮助菜单选项。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>bt</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:image {"id":549,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/4.png" alt="" class="wp-image-549"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>4. 这时候我们输入数字14，就能看到宝塔面板的登录地址还有用户名和密码。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":550,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/5.png" alt="" class="wp-image-550"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>5.我们把登录地址复制到浏览器打开，输入用户名和密码，进入到宝塔面板的后台管理页面。一般来说， 首次登陆进来面板后，会自动推荐你安装环境套件，这里有两种选择，第一种是LNMP套件，第二种是LAMP套件 。如图（建议选择一键安装LNMP）</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":554,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/6.png" alt="" class="wp-image-554"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>6.为安全起见，建议修改你的用户名和密码，以及面板默认端口。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":551,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/7.jpg" alt="" class="wp-image-551"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>注意：修改面板端口之前，记得在你的阿里云或者腾讯云控制台，找到你的云服务器，在“安全组”一栏下修改规则，选择入站规则下的“添加规则”。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":552,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/8.png" alt="" class="wp-image-552"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":553,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/9.png" alt="" class="wp-image-553"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>关于其他的安全设置，我们下一篇文章再讲，这里就先设置到这里。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>7.下面我们开始来一键部署WordPress建站程序，（提示：如果前面你没有安装LNMP环境或者LAMP环境，也不要着急，我们可以在软件搜索步骤5列出的几个套件手动安装），点击面板左侧“软件商店”，然后找到WordPress，选择一键部署。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":555,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/10.png" alt="" class="wp-image-555"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>8.输入你的网站信息，即你的域名。另外，为了避免出现不可知的错误，新手建议不要修改默认创建的数据库名和命令，自己把它存储好就行。（当点击提交后，系统会自动列出数据库名和密码以及网站地址，请保存好这些信息，后面进入WordPress安装需要填写）</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":556,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/11.png" alt="" class="wp-image-556"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>9.在线安装WordPress网站程序的时候，先选择语言“简体中文”，然后填写数据库名和密码（就是上一步叫你保存的）</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":561,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/12.png" alt="" class="wp-image-561"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":562,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/13.png" alt="" class="wp-image-562"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":569,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/14.png" alt="" class="wp-image-569"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":563,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/15.png" alt="" class="wp-image-563"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":564,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/16.png" alt="" class="wp-image-564"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>10. 安装完成后，登陆你的Wordpress管理后台。（后台登陆地址为：你的网址或ip/wp-admin）</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":565,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/17.png" alt="" class="wp-image-565"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":566,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/18.png" alt="" class="wp-image-566"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>11.到这里，你的WordPress网站就搭建成了。接着你可以去发布文章或更换主题，以及后期的维护等等，这里就不细说了。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>12.最后再讲一下，如何在宝塔面板管理你的网站，以及设置各项参数。点击面板左侧的“网站”，选择你的网站后面“设置”，就可以看到各种功能设置了。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":567,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://github.com/alitenten/aliyun-cloud-server/blob/master/img/19.png" alt="" class="wp-image-567"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>本文作为一篇针对新手的阿里云服务器搭建个人WordPress网站教程，内容不是很多，也非常简单。相信对于满足一般建站需求的新手朋友应该是够用了。如果我的文章对您有帮助，请帮我点个赞，谢谢！</p>
+<!-- /wp:paragraph -->
