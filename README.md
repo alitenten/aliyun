@@ -3,6 +3,10 @@
 
 [**点击进入阿里云最新优惠活动以及代金券领取**](https://leffz.com)
 
+
+[**如何用阿里云服务器建立个人网站（针对新手）**](https://alitenten.github.io/alecs.html)
+
+
 #  阿里云服务器 ECS
 
 阿里云服务器ECS（Elastic Compute Service）是一种简单高效、处理能力可弹性伸缩的计算服务。帮助您构建更稳定、安全的应用，提升运维效率，降低IT成本，使您更专注于核心业务创新。
