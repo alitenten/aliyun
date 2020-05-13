@@ -1,10 +1,18 @@
 # 阿里云服务器 aliyun-cloud-server
 阿里云服务器使用教程，阿里云服务器ECS，阿里云GPU云服务器，阿里云FPGA云服务器，阿里云轻量应用服务器
 
-[**点击进入阿里云最新优惠活动以及代金券领取**](https://leffz.com)
 
 
-[如何用阿里云服务器建立个人网站（针对新手）](https://alitenten.github.io/alecs.html)
+### <a href="https://leffz.com" target="_blank">点击进入阿里云最新优惠活动以及代金券领取</a>
+
+ <a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" title="领取限量云产品优惠" target="_blank">
+
+![领取限量云产品优惠](https://images.gitee.com/uploads/images/2020/0513/175237_a7f08995_7556849.png "aliyun.png")
+
+</a>
+
+[如何用阿里云服务器建立个人网站（针对新手）](https://leffz.com/544.html)
+
 
 
 
